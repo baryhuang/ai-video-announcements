@@ -133,7 +133,7 @@ def create_video(video_paths: list, music_path: Path, output_path: str):
             
             # Lower background music volume and add fadeout
             print("Adjusting background music volume and adding fadeout...")
-            background_audio = background_audio.volumex(0.3)  # Reduce volume to 30%
+            background_audio = background_audio.volumex(0.15)  # Reduce volume to 15%
             background_audio = background_audio.audio_fadeout(3)  # 3 second fadeout
             
             # Combine original audio with background music
